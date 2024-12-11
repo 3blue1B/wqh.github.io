@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+/* 简单的样式表，用于美化网页 */
+/* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    display: block; 
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+.fade-in-text {
+    opacity: 0; 
+    animation: fadeInText 2s ease-in-out forwards; 
+}
+
+.fade-in-text {
+    
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(55vw);
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+.slide-animation {
+    position: relative;
+    animation: slide 5s ease-in-out infinite; 
+}
